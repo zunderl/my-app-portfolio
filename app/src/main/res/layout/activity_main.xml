@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/mainApp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Nanodegree Apps!"
+        android:id="@+id/textMainLabel"
+        android:phoneNumber="false"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/buttonSpotifyStreamer"
+        android:layout_below="@+id/textMainLabel"
+        android:layout_alignLeft="@+id/textMainLabel"
+        android:layout_alignStart="@+id/textMainLabel"
+        android:layout_alignRight="@+id/textMainLabel"
+        android:layout_alignEnd="@+id/textMainLabel"
+        android:layout_marginTop="40dp"
+        android:enabled="true"
+        android:clickable="true"
+        android:background="#F08C35"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/buttonScoresApp"
+        android:layout_below="@+id/buttonSpotifyStreamer"
+        android:layout_alignLeft="@+id/buttonSpotifyStreamer"
+        android:layout_alignStart="@+id/buttonSpotifyStreamer"
+        android:layout_alignRight="@+id/buttonSpotifyStreamer"
+        android:layout_alignEnd="@+id/buttonSpotifyStreamer"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:background="#F08C35"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library App"
+        android:id="@+id/buttonLibraryApp"
+        android:layout_below="@+id/buttonScoresApp"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/buttonScoresApp"
+        android:layout_alignStart="@+id/buttonScoresApp"
+        android:layout_alignRight="@+id/buttonScoresApp"
+        android:layout_alignEnd="@+id/buttonScoresApp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="#F08C35" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Build it Bigger"
+        android:id="@+id/buttonBuildItBigger"
+        android:layout_below="@+id/buttonLibraryApp"
+        android:layout_alignLeft="@+id/buttonLibraryApp"
+        android:layout_alignStart="@+id/buttonLibraryApp"
+        android:layout_alignRight="@+id/buttonLibraryApp"
+        android:layout_alignEnd="@+id/buttonLibraryApp"
+        android:layout_marginTop="20dp"
+        android:background="#F08C35"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ Reader"
+        android:id="@+id/buttonXYZReader"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"
+        android:background="#F08C35"
+        android:layout_below="@+id/buttonBuildItBigger"
+        android:layout_alignLeft="@+id/buttonBuildItBigger"
+        android:layout_alignStart="@+id/buttonBuildItBigger"
+        android:layout_alignRight="@+id/buttonBuildItBigger"
+        android:layout_alignEnd="@+id/buttonBuildItBigger"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPSTONE : MY OWN APP"
+        android:id="@+id/buttonMyOwnApp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#fff01b16"
+        android:layout_below="@+id/buttonXYZReader"
+        android:layout_alignLeft="@+id/buttonXYZReader"
+        android:layout_alignStart="@+id/buttonXYZReader"
+        android:layout_alignRight="@+id/buttonXYZReader"
+        android:layout_alignEnd="@+id/buttonXYZReader"
+        android:layout_marginTop="20dp"
+        android:onClick="displayToast" />
+
+</RelativeLayout>
